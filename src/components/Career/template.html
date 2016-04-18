@@ -1,0 +1,33 @@
+<div id="career"            @keyup.enter="nextSeason"
+>
+  <section class="articles">
+    <div class="articles__nav">
+      <div class="articles__nav__wrapper" v-for="(index, season) in data.seasons">
+
+          <div class="articles__nav__wrapper__elem"
+           @click="showSeason(index)"
+           >
+            <div class="articles__nav__wrapper__elem__line"></div>
+          </div>
+
+          <div class="articles__nav__wrapper__text">{{season.date}}</div>
+      </div>
+    </div>
+
+    <article class="article">
+      <div class="article__content">
+        <figure class="article__content__image">
+          <img v-bind:src="shownSeason.photo" alt="">
+        </figure>
+        <div class="article__content__titles">
+          <h1>
+           {{shownSeason.title}} - {{shownSeason.date}}
+          </h1>
+          <p>
+            {{shownSeason.description}}
+          </p>
+        </div>
+      </div>
+    </article>
+  </section>
+</div>
