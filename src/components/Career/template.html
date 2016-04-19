@@ -1,33 +1,31 @@
-<div id="career"            @keyup.enter="nextSeason"
->
-  <section class="articles">
+<div id="career">
+  <section class="hero full">
+    <p>01</p>
+    <h1>Career</h1>
+    <img src="http://placehold.it/350x600" alt="">
+  </section>
+  <section class="articles full">
     <div class="articles__nav">
-      <div class="articles__nav__wrapper" v-for="(index, season) in data.seasons">
+      <div class="articles__nav__item" v-for="(index, season) in data.seasons" @click="showSeason(index)">
 
-          <div class="articles__nav__wrapper__elem"
-           @click="showSeason(index)"
-           >
-            <div class="articles__nav__wrapper__elem__line"></div>
+          <div class="articles__nav__item__elem">
+            <div class="line"></div>
+            <div class="date">{{season.date}}</div>
           </div>
 
-          <div class="articles__nav__wrapper__text">{{season.date}}</div>
       </div>
     </div>
 
     <article class="article">
-      <div class="article__content">
-        <figure class="article__content__image">
-          <img v-bind:src="shownSeason.photo" alt="">
-        </figure>
-        <div class="article__content__titles">
-          <h1>
-           {{shownSeason.title}} - {{shownSeason.date}}
-          </h1>
+        <img v-bind:src="shownSeason.photo" alt="" class="article__image parallax">
+        <div class="article__titles parallax">
+          <h2>
+            {{shownSeason.title}} - {{shownSeason.date}}
+          </h2>
           <p>
             {{shownSeason.description}}
           </p>
         </div>
-      </div>
     </article>
   </section>
 </div>

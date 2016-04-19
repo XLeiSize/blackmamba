@@ -26,13 +26,7 @@ class Router extends VueRouter {
       },
       '/career': {
         name: 'career',
-        component: Career,
-        subRoutes: {
-          '/:id': {
-            name: 'detail',
-            component: Career
-          }
-        }
+        component: Career
       }
     })
   }
