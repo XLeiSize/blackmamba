@@ -3,6 +3,7 @@
 
 	.articles {
 		position: relative;
+    overflow: hidden;
 		&__nav {
 			position: absolute;
 			z-index: 100;
@@ -85,6 +86,17 @@
 				}
 			}
 		}
+
+    .season {
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      line-height: 11rem;
+      font-size: 15rem;
+      font-weight: bolder;
+      color: $white;
+      opacity: 0.2;
+    }
 
     .article {
       position: absolute;

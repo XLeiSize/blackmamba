@@ -16,11 +16,15 @@
       </div>
     </div>
 
+    <p class="season">{{shownSeason.date}}</p>
+
     <article class="article">
+
         <img v-bind:src="shownSeason.photo" alt="" class="article__image parallax">
         <div class="article__titles parallax">
+
           <h2>
-            {{shownSeason.title}} - {{shownSeason.date}}
+            {{shownSeason.title}}
           </h2>
           <p>
             {{shownSeason.description}}

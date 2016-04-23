@@ -2,7 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Home from './components/Home'
+import Stats from './components/Stats'
 import Career from './components/Career'
+import Shoes from './components/Shoes'
 
 Vue.use(VueRouter)
 
@@ -24,9 +26,17 @@ class Router extends VueRouter {
         name: 'home',
         component: Home
       },
+      '/stats': {
+        name: 'stats',
+        component: Stats
+      },
       '/career': {
         name: 'career',
         component: Career
+      },
+      '/shoes': {
+        name: 'shoes',
+        component: Shoes
       }
     })
   }

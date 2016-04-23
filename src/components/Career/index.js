@@ -47,6 +47,7 @@ export default Vue.extend({
     },
     animation () {
       let $img = document.querySelector('.article__image')
+      let $season = document.querySelector('.season')
       let $banner = document.querySelector('.article__titles')
       let $title = $banner.querySelector('h2')
       let $text = $banner.querySelector('p')
@@ -54,6 +55,10 @@ export default Vue.extend({
         delay: 0.2
       })
       tl.from($img, 0.4, {
+        opacity: 0,
+        ease: Power0.easeInOut
+      })
+      tl.from($season, 0.4, {
         opacity: 0,
         ease: Power0.easeInOut
       })
