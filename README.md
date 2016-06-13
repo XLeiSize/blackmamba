@@ -1,6 +1,12 @@
-# vue-starter
+# BLACK MAMBA
 
-> Vue.js starter
+![Preview](http://www.leixing.fr/static/img/bg/blackmamba.jpg)
+
+#### Technologies :
+
+* [ES6 - Babel](https://github.com/babel/babel)
+* [Vue.js](https://github.com/vuejs)
+* [GSAP - TweenMax](http://greensock.com/tweenmax)
 
 ## Build Setup
 
