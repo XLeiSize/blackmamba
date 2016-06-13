@@ -1,6 +1,6 @@
 # BLACK MAMBA
 
-![Preview](http://www.leixing.fr/static/img/bg/blackmamba.jpg)
+![Preview](http://www.leixing.fr/static/img/bg/mamba-out.jpg)
 
 #### Technologies :
 
